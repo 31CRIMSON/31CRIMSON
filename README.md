@@ -1,24 +1,26 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="31CRIMSON" />
+<img src="./assets/header.svg" width="100%" alt="31CRIMSON — DevOps / Cloud / Backend / Automation" />
 
 <br/>
 
-<a href="https://github.com/31CRIMSON"><img src="https://img.shields.io/github/followers/31CRIMSON?label=followers&style=for-the-badge&logo=github&color=8B0000&labelColor=0d0d0d" alt="GitHub followers" /></a>
-<img src="https://komarev.com/ghpvc/?username=31CRIMSON&label=views&style=for-the-badge&color=8B0000&labelColor=0d0d0d" alt="Profile views" />
-<a href="https://t.me/your_username"><img src="https://img.shields.io/badge/telegram-write_me-DC143C?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0d0d0d" alt="Telegram" /></a>
+<a href="https://github.com/31CRIMSON"><img src="./assets/contact-github.svg" height="36" alt="GitHub" /></a>&nbsp;
+<a href="https://t.me/your_username"><img src="./assets/contact-telegram.svg" height="36" alt="Telegram" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/dmitriy-kuzmik-ba2b762b9/"><img src="./assets/contact-linkedin.svg" height="36" alt="LinkedIn" /></a>&nbsp;
+<a href="mailto:dmitriy.kuzzmik@gmail.com"><img src="./assets/contact-email.svg" height="36" alt="Email" /></a>
 
 <br/><br/>
 
-<img src="./assets/terminal.svg" width="85%" alt="whoami" />
-
-<br/>
-
-<code>DevOps / Infrastructure Engineering • Full-Stack Development • Automation</code>
+<img src="./assets/terminal.svg" width="88%" alt="kubectl get pods -n 31crimson" />
 
 <br/><br/>
 
-<sub>Building, deploying, securing and observing systems — from application code to production infrastructure.</sub>
+<code>DevOps / Infrastructure</code> · <code>Cloud</code> · <code>Backend</code> · <code>Full-Stack</code> · <code>Automation &amp; CI/CD</code> · <code>Observability &amp; Security</code>
+
+<br/><br/>
+
+<sub>Building, deploying, securing and observing systems — from application code to production infrastructure.<br/>
+Open to remote projects, freelance and small commercial tasks: DevOps, backend, automation, API integrations, web services.</sub>
 
 <br/><br/>
 
@@ -27,9 +29,9 @@
 ### `⟨ core stack ⟩`
 
 <img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,terraform,ansible,aws,gcp,githubactions,gitlab,jenkins,nginx,cloudflare&perline=12&theme=dark" alt="Infrastructure and DevOps stack" />
-
+<br/>
 <img src="https://skillicons.dev/icons?i=ts,js,python,php,nodejs,express,react,nextjs,redux,flask,laravel,git&perline=12&theme=dark" alt="Development stack" />
-
+<br/>
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,grafana,prometheus,rabbitmq,github,bash,html,css,vscode&perline=12&theme=dark" alt="Data, observability and tools" />
 
 <br/>
@@ -42,57 +44,34 @@
 
 ### `⟨ systems i've worked with ⟩`
 
-</div>
-
-<table>
-<tr><td width="28%"><b>Infrastructure & orchestration</b></td><td>Kubernetes (RKE2, EKS), Rancher, Helm, Docker, Docker Compose, containerd, Terraform, Terragrunt, Ansible, Linux, bare metal, VPS</td></tr>
-<tr><td><b>Cloud & delivery</b></td><td>AWS, Google Cloud (Cloud Run, Artifact Registry), GitHub Actions, GitLab CI, Bitbucket Pipelines, Jenkins, Argo CD, Argo Workflows, Fleet, GitOps, CI/CD</td></tr>
-<tr><td><b>Backend & APIs</b></td><td>TypeScript, JavaScript, Python, PHP, Node.js, Express, Flask, Laravel, REST, GraphQL, WebSockets, API integrations</td></tr>
-<tr><td><b>Frontend & mobile</b></td><td>React, Next.js, React Native, Expo, Redux Toolkit, Vite, HTML, CSS</td></tr>
-<tr><td><b>Databases & messaging</b></td><td>PostgreSQL, MySQL, MongoDB, Redis, ClickHouse, Percona XtraDB Cluster (PXC), ProxySQL, RabbitMQ</td></tr>
-<tr><td><b>Observability</b></td><td>Prometheus, Grafana, Loki, Tempo, Mimir, OpenTelemetry, Alertmanager, Zabbix; metrics, logs, tracing, alerting</td></tr>
-<tr><td><b>Networking & edge</b></td><td>Nginx, HAProxy, Traefik, Cloudflare, DNS, TLS, reverse proxies, load balancing, WAF, rate limiting, bot / DDoS mitigation</td></tr>
-<tr><td><b>Security & reliability</b></td><td>HashiCorp Vault, secrets management, RBAC, SSO, network isolation, high availability, failover, disaster recovery, backups, migrations, low-downtime deployments</td></tr>
-<tr><td><b>Automation & tooling</b></td><td>Bash, Python scripting, web scraping, browser automation, data processing, Git, Postman, Swagger / OpenAPI, Jest, VS Code</td></tr>
-<tr><td><b>CMS & e-commerce</b></td><td>WordPress, Magento, OpenCart</td></tr>
-</table>
-
-<div align="center">
+<img src="./assets/stack.svg" width="100%" alt="Infrastructure, cloud, backend, frontend, databases, observability, networking, security, automation, CMS" />
 
 <img src="./assets/pulse.svg" width="100%" />
 
 ### `⟨ selected builds ⟩`
 
-</div>
+<a href="https://github.com/31CRIMSON/analytics-app"><img src="./assets/project-01.svg" width="49%" alt="01 // E-commerce Analytics Platform" /></a>
+<img src="./assets/project-02.svg" width="49%" alt="02 // TierTracker (private)" />
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<b>01 // E-commerce Event Analytics</b><br/><br/>
-TypeScript SDK → Node.js / Express API → MongoDB → Next.js analytics dashboard.<br/><br/>
-Event ingestion, API-key authentication, event filtering, metrics aggregation and business analytics. Multi-service Docker setup managed with Terraform.<br/><br/>
-<code>TypeScript · Express · MongoDB · Next.js · Docker · Terraform</code>
-</td>
-<td width="50%" valign="top">
-<b>02 // TierTracker</b><br/><br/>
-Pet-tracking application ecosystem with a React Native / Expo mobile app, Node.js / MongoDB API and Next.js editor.<br/><br/>
-Firebase authentication, cloud services, gamification features, container builds and Google Cloud deployment workflows.<br/><br/>
-<code>React Native · Expo · Node.js · MongoDB · Next.js · Firebase · GCP</code>
-</td>
-</tr>
-</table>
+<sub><code>01 ↳</code> <a href="https://github.com/31CRIMSON/analytics-sdk"><code>analytics-sdk ↗</code></a> · <a href="https://github.com/31CRIMSON/analytics-app"><code>analytics-app ↗</code></a></sub>
 
-<div align="center">
+<img src="./assets/project-03.svg" width="49%" alt="03 // ZooCamp (private)" />
+<img src="./assets/project-04.svg" width="49%" alt="04 // Task Management Board" />
+
+<sub><code>■ private</code> — source is closed, so the cards show architecture and stack instead of links.<br/>
+<code>+ also</code> — web application for ordering medicines from online pharmacies.</sub>
+
+<br/><br/>
 
 <details>
 <summary><code>⟨ engineering focus / expand ⟩</code></summary>
 <br/>
 <p align="left">
-<strong>Platform engineering:</strong> Kubernetes operations, infrastructure provisioning, GitOps, reproducible environments, hybrid and cloud deployments.<br/><br/>
-<strong>Reliability:</strong> high availability, failover, backup and recovery strategies, multi-region architecture, performance tuning and production troubleshooting.<br/><br/>
-<strong>Observability:</strong> telemetry pipelines, service metrics, centralized logs, distributed tracing and actionable alerts.<br/><br/>
-<strong>Application engineering:</strong> frontend-to-backend delivery, API architecture, event collection, data processing, integrations and automation.<br/><br/>
-<strong>Infrastructure security:</strong> secrets management, access control, traffic filtering, edge protection and service isolation.
+<strong>🛠 Platform engineering:</strong> Kubernetes operations, infrastructure provisioning, GitOps, reproducible environments, hybrid and cloud deployments.<br/><br/>
+<strong>🛡 Reliability:</strong> high availability, failover, backup and recovery strategies, multi-region architecture, performance tuning and production troubleshooting.<br/><br/>
+<strong>📡 Observability:</strong> telemetry pipelines, service metrics, centralized logs, distributed tracing and actionable alerts.<br/><br/>
+<strong>⚙️ Application engineering:</strong> frontend-to-backend delivery, API architecture, event collection, data processing, integrations and automation.<br/><br/>
+<strong>🔐 Infrastructure security:</strong> secrets management, access control, traffic filtering, edge protection and service isolation.
 </p>
 </details>
 
@@ -102,12 +81,9 @@ Firebase authentication, cloud services, gamification features, container builds
 
 ### `⟨ telemetry ⟩`
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=31CRIMSON&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0d0d0d&title_color=FF1E3C&icon_color=FF1E3C&text_color=D9D9DE&ring_color=FF1E3C&rank_icon=github" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=31CRIMSON&layout=donut&langs_count=6&hide_border=true&bg_color=0d0d0d&title_color=FF1E3C&text_color=D9D9DE" alt="Top languages" />
-
-<img src="https://streak-stats.demolab.com?user=31CRIMSON&hide_border=true&background=0D0D0D&ring=FF1E3C&fire=FF1E3C&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FF1E3C&sideLabels=D9D9DE&dates=6B6B75&stroke=2A0010" alt="Contribution streak" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=31CRIMSON&hide_border=true&bg_color=0d0d0d&color=D9D9DE&line=FF1E3C&point=FFFFFF&area=true&area_color=8B0000&title_color=FF1E3C&custom_title=contribution%20heartbeat" width="100%" alt="Contribution activity" />
+<img src="https://raw.githubusercontent.com/31CRIMSON/31CRIMSON/output/stats.svg" width="100%" alt="GitHub stats incl. private repositories" />
+<img src="https://raw.githubusercontent.com/31CRIMSON/31CRIMSON/output/activity.svg" width="100%" alt="Contribution heartbeat" />
+<img src="https://raw.githubusercontent.com/31CRIMSON/31CRIMSON/output/langs.svg" width="100%" alt="Language footprint" />
 
 <img src="./assets/pulse.svg" width="100%" />
 
@@ -121,6 +97,8 @@ Firebase authentication, cloud services, gamification features, container builds
 
 <br/>
 
-<sub><code>// end of transmission · 31CRIMSON</code></sub>
+<sub><code>// end of transmission · stats regenerate every 6h via GitHub Actions</code></sub>
+<br/>
+<img src="https://komarev.com/ghpvc/?username=31CRIMSON&label=profile%20views&style=flat-square&color=8B0000&labelColor=0d0d0d" alt="Profile views" />
 
 </div>

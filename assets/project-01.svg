@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 315" width="490" height="315">
+<defs><filter id="g" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.5" result="b"/><feFlood flood-color="#FF1E3C"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>
+text { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace; }
+.n { fill: #FF1E3C; font-size: 15px; font-weight: 800; }
+.t { fill: #fff; font-size: 14px; font-weight: 700; letter-spacing: 1px; }
+.go { fill: #FF1E3C; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+.lock { fill: #6B6B75; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+.node { fill: #1a0a0f; stroke: #FF1E3C; stroke-width: 1.5; }
+.nl { fill: #fff; font-size: 12px; }
+.wire { stroke: #FF1E3C; stroke-opacity: .25; stroke-width: 2; fill: none; }
+.flow { stroke: #FF1E3C; stroke-width: 2; fill: none; stroke-dasharray: 6 10; animation: dash 1s linear infinite; }
+.d { fill: #D9D9DE; font-size: 13px; }
+.tag { fill: none; stroke: #FF1E3C; stroke-opacity: .5; }
+.tt { fill: #ff9aa8; font-size: 11px; }
+@keyframes dash { to { stroke-dashoffset: -16; } }
+</style>
+<rect x="1" y="1" width="488" height="313" rx="14" fill="#0d0d0f" stroke="#FF1E3C" stroke-opacity=".35"/><path d="M1 60V15a14 14 0 0 1 14-14h460a14 14 0 0 1 14 14v45z" fill="#16090d"/><text x="22" y="38" class="n">01 //</text><text x="72" y="38" class="t">E-COMMERCE ANALYTICS PLATFORM</text><text x="468" y="38" text-anchor="end" class="go">PUBLIC ↗</text><path d="M118.0 103.0 H372.0" class="wire"/><path d="M118.0 103.0 H372.0" class="flow"/><circle r="3.5" fill="#fff" filter="url(#g)" opacity="0"><set attributeName="opacity" to="1" begin="0.0s"/><animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M118.0 103.0 H372.0"/></circle><circle r="3.5" fill="#fff" filter="url(#g)" opacity="0"><set attributeName="opacity" to="1" begin="0.8s"/><animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M118.0 103.0 H372.0"/></circle><circle r="3.5" fill="#fff" filter="url(#g)" opacity="0"><set attributeName="opacity" to="1" begin="1.6s"/><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M118.0 103.0 H372.0"/></circle><rect x="22.0" y="86" width="96" height="34" rx="7" class="node"/><text x="70.0" y="108" text-anchor="middle" class="nl">TS SDK</text><rect x="138.7" y="86" width="96" height="34" rx="7" class="node"/><text x="186.7" y="108" text-anchor="middle" class="nl">Express API</text><rect x="255.3" y="86" width="96" height="34" rx="7" class="node"/><text x="303.3" y="108" text-anchor="middle" class="nl">MongoDB</text><rect x="372.0" y="86" width="96" height="34" rx="7" class="node"/><text x="420.0" y="108" text-anchor="middle" class="nl">Next.js</text><text x="22" y="160" class="d">TypeScript SDK for tracking user events, a Node.js</text><text x="22" y="181" class="d">backend that collects and processes them, and a</text><text x="22" y="202" class="d">dashboard for user activity and business metrics.</text><rect x="22.0" y="233" width="82.2" height="22" rx="11" class="tag"/><text x="63.1" y="248" text-anchor="middle" class="tt">TypeScript</text><rect x="111.2" y="233" width="62.4" height="22" rx="11" class="tag"/><text x="142.4" y="248" text-anchor="middle" class="tt">Node.js</text><rect x="180.6" y="233" width="62.4" height="22" rx="11" class="tag"/><text x="211.8" y="248" text-anchor="middle" class="tt">Express</text><rect x="249.9" y="233" width="62.4" height="22" rx="11" class="tag"/><text x="281.1" y="248" text-anchor="middle" class="tt">MongoDB</text><rect x="319.3" y="233" width="62.4" height="22" rx="11" class="tag"/><text x="350.5" y="248" text-anchor="middle" class="tt">Next.js</text>
+</svg>
