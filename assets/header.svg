@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.55" stop-color="#12030a"/>
+      <stop offset="1" stop-color="#2a0010"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff1e3c" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#8b0000" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff1e3c" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff1e3c" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff1e3c" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ff1e3c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#ffd6dc"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="neon" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="320" rx="18"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace; }
+    .t-main { animation: flicker 6s infinite; }
+    .g-red  { animation: glitchA 4s infinite steps(1); mix-blend-mode: screen; }
+    .g-cyan { animation: glitchB 4s infinite steps(1); mix-blend-mode: screen; }
+    .pulse  { animation: pulse 4s ease-in-out infinite; transform-origin: 600px 150px; }
+    .scan   { animation: scan 5s linear infinite; }
+    .p      { animation: rise linear infinite; }
+    .blink  { animation: blink 1s steps(1) infinite; }
+    .sub    { animation: fadein 2s ease-out both; animation-delay: .6s; }
+
+    @keyframes flicker {
+      0%, 18%, 22%, 62%, 64%, 100% { opacity: 1; }
+      20%, 63% { opacity: .55; }
+    }
+    @keyframes glitchA {
+      0%, 86%, 100% { transform: translate(0,0); opacity: 0; }
+      87% { transform: translate(-7px, 2px); opacity: .9; }
+      89% { transform: translate(5px, -3px); opacity: .9; }
+      91% { transform: translate(-3px, 1px); opacity: .9; }
+      93% { transform: translate(0,0); opacity: 0; }
+    }
+    @keyframes glitchB {
+      0%, 86%, 100% { transform: translate(0,0); opacity: 0; }
+      87% { transform: translate(7px, -2px); opacity: .8; }
+      89% { transform: translate(-5px, 3px); opacity: .8; }
+      91% { transform: translate(3px, -1px); opacity: .8; }
+      93% { transform: translate(0,0); opacity: 0; }
+    }
+    @keyframes pulse { 0%,100% { opacity: .65; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+    @keyframes scan  { from { transform: translateY(-80px); } to { transform: translateY(340px); } }
+    @keyframes rise  { from { transform: translateY(0); opacity: 0; } 15% { opacity: .9; } to { transform: translateY(-340px); opacity: 0; } }
+    @keyframes blink { 0%,50% { opacity: 1; } 50.01%,100% { opacity: 0; } }
+    @keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <ellipse class="pulse" cx="600" cy="150" rx="420" ry="170" fill="url(#glow)"/>
+
+    <!-- поднимающиеся частицы -->
+    <g fill="#ff2b4a">
+      <circle class="p" cx="80"   cy="340" r="2"   style="animation-duration:9s;  animation-delay:0s"/>
+      <circle class="p" cx="210"  cy="340" r="1.5" style="animation-duration:12s; animation-delay:2s"/>
+      <circle class="p" cx="330"  cy="340" r="2.5" style="animation-duration:8s;  animation-delay:4s"/>
+      <circle class="p" cx="470"  cy="340" r="1.5" style="animation-duration:11s; animation-delay:1s"/>
+      <circle class="p" cx="560"  cy="340" r="2"   style="animation-duration:10s; animation-delay:6s"/>
+      <circle class="p" cx="690"  cy="340" r="1.5" style="animation-duration:13s; animation-delay:3s"/>
+      <circle class="p" cx="790"  cy="340" r="2.5" style="animation-duration:9s;  animation-delay:5s"/>
+      <circle class="p" cx="900"  cy="340" r="1.5" style="animation-duration:12s; animation-delay:.5s"/>
+      <circle class="p" cx="1010" cy="340" r="2"   style="animation-duration:8s;  animation-delay:7s"/>
+      <circle class="p" cx="1130" cy="340" r="1.5" style="animation-duration:11s; animation-delay:2.5s"/>
+    </g>
+
+    <!-- уголки-рамка -->
+    <g stroke="#ff1e3c" stroke-width="3" fill="none" stroke-linecap="square">
+      <path d="M30 70V30H70"/><path d="M1130 30H1170V70"/>
+      <path d="M30 250V290H70"/><path d="M1170 250V290H1130"/>
+    </g>
+    <g class="mono" font-size="12" fill="#ff1e3c" fill-opacity=".6">
+      <text x="84" y="42">SYS://PROFILE.INIT</text>
+      <text x="1116" y="42" text-anchor="end">[ ONLINE ]</text>
+      <text x="84" y="286">LAT 0x31 · LNG 0xC3</text>
+      <text x="1116" y="286" text-anchor="end">v.2026</text>
+    </g>
+
+    <!-- заголовок с глитчем -->
+    <g class="mono" font-size="96" font-weight="800" text-anchor="middle" letter-spacing="10">
+      <text class="g-cyan" x="600" y="168" fill="#00f0ff">31CRIMSON</text>
+      <text class="g-red"  x="600" y="168" fill="#ff003c">31CRIMSON</text>
+      <text class="t-main" x="600" y="168" fill="url(#title)" filter="url(#neon)">31CRIMSON</text>
+    </g>
+
+    <!-- подзаголовок -->
+    <g class="sub mono" font-size="20" text-anchor="middle" fill="#ffb3bf">
+      <text x="600" y="218">&lt;/&gt; developer · builder · night coder<tspan class="blink" fill="#ff1e3c"> █</tspan></text>
+    </g>
+
+    <rect class="scan" x="0" y="0" width="1200" height="60" fill="url(#scan)"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="318" rx="18" fill="none" stroke="#ff1e3c" stroke-opacity=".35" stroke-width="2"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 900 430" width="900" height="430">
+  <defs>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e0e10"/>
+      <stop offset="1" stop-color="#090507"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ff1e3c" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace; font-size: 17px; white-space: pre; }
+    .prompt { fill: #ff1e3c; font-weight: 700; }
+    .cmd    { fill: #ffffff; }
+    .key    { fill: #ff7a8a; }
+    .val    { fill: #d9d9de; }
+    .dim    { fill: #6b6b75; }
+    .ok     { fill: #3ddc84; }
+    .ln     { opacity: 0; animation: show .01s forwards; }
+    .blink  { animation: blink 1s steps(1) infinite; }
+    @keyframes show  { to { opacity: 1; } }
+    @keyframes blink { 0%,50% { opacity: 1; } 50.01%,100% { opacity: 0; } }
+  </style>
+
+  <!-- окно -->
+  <rect x="10" y="10" width="880" height="410" rx="14" fill="url(#win)" stroke="#ff1e3c" stroke-opacity=".45" filter="url(#soft)"/>
+  <rect x="10" y="10" width="880" height="40" rx="14" fill="#16090d"/>
+  <rect x="10" y="36" width="880" height="14" fill="#16090d"/>
+  <circle cx="38" cy="30" r="7" fill="#ff5f57"/>
+  <circle cx="62" cy="30" r="7" fill="#febc2e"/>
+  <circle cx="86" cy="30" r="7" fill="#28c840"/>
+  <text x="450" y="35" text-anchor="middle" class="dim" style="font-size:14px">crimson@github: ~</text>
+
+  <!-- строки (появляются по очереди; команды «печатаются») -->
+  <defs>
+    <clipPath id="c1"><rect x="40" y="70" height="30" width="0"><animate attributeName="width" from="0" to="400" begin="0.3s" dur="0.9s" fill="freeze" calcMode="discrete" values="0;80;130;180;230;280;330;400" keyTimes="0;.14;.28;.42;.56;.7;.84;1"/></rect></clipPath>
+    <clipPath id="c2"><rect x="40" y="170" height="30" width="0"><animate attributeName="width" from="0" to="400" begin="2.6s" dur="0.9s" fill="freeze" calcMode="discrete" values="0;80;130;180;230;280;330;400" keyTimes="0;.14;.28;.42;.56;.7;.84;1"/></rect></clipPath>
+    <clipPath id="c3"><rect x="40" y="300" height="30" width="0"><animate attributeName="width" from="0" to="400" begin="5s" dur="0.9s" fill="freeze" calcMode="discrete" values="0;80;130;180;230;280;330;400" keyTimes="0;.14;.28;.42;.56;.7;.84;1"/></rect></clipPath>
+  </defs>
+
+  <text x="40" y="92" clip-path="url(#c1)"><tspan class="prompt">❯ </tspan><tspan class="cmd">whoami</tspan></text>
+  <text x="40" y="122" class="ln" style="animation-delay:1.4s"><tspan class="key">name    </tspan><tspan class="val">31CRIMSON</tspan></text>
+  <text x="40" y="148" class="ln" style="animation-delay:1.7s"><tspan class="key">role    </tspan><tspan class="val">developer &amp; builder</tspan></text>
+
+  <text x="40" y="192" clip-path="url(#c2)"><tspan class="prompt">❯ </tspan><tspan class="cmd">cat stack.json</tspan></text>
+  <text x="40" y="222" class="ln" style="animation-delay:3.7s"><tspan class="key">langs   </tspan><tspan class="val">[ Python, JavaScript, TypeScript ]</tspan></text>
+  <text x="40" y="248" class="ln" style="animation-delay:4.0s"><tspan class="key">tools   </tspan><tspan class="val">[ Git, Linux, Docker, VS Code ]</tspan></text>
+  <text x="40" y="274" class="ln" style="animation-delay:4.3s"><tspan class="key">now     </tspan><tspan class="val">строю что-то крутое</tspan></text>
+
+  <text x="40" y="322" clip-path="url(#c3)"><tspan class="prompt">❯ </tspan><tspan class="cmd">./status --live</tspan></text>
+  <text x="40" y="352" class="ln" style="animation-delay:6.1s"><tspan class="ok">● online</tspan><tspan class="val">  ·  open to collabs  ·  coffee: </tspan><tspan class="prompt">████████░░</tspan><tspan class="val"> 80%</tspan></text>
+
+  <text x="40" y="392" class="ln" style="animation-delay:6.6s"><tspan class="prompt">❯ </tspan><tspan class="prompt blink">▌</tspan></text>
+</svg>
