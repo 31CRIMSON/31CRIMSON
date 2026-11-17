@@ -5,7 +5,7 @@
 <br/>
 
 <a href="https://github.com/31CRIMSON"><img src="./assets/contact-github.svg" height="36" alt="GitHub" /></a>&nbsp;
-<a href="https://t.me/your_username"><img src="./assets/contact-telegram.svg" height="36" alt="Telegram" /></a>&nbsp;
+<a href="https://t.me/crimsonJS"><img src="./assets/contact-telegram.svg" height="36" alt="Telegram" /></a>&nbsp;
 <a href="https://www.linkedin.com/in/dmitriy-kuzmik-ba2b762b9/"><img src="./assets/contact-linkedin.svg" height="36" alt="LinkedIn" /></a>&nbsp;
 <a href="mailto:dmitriy.kuzzmik@gmail.com"><img src="./assets/contact-email.svg" height="36" alt="Email" /></a>
 
